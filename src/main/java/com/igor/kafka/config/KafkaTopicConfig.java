@@ -17,4 +17,11 @@ public class KafkaTopicConfig {
                 .name("igor")
                 .build();
     }
+
+    @Bean
+    public NewTopic jsonTopic() {
+        return TopicBuilder
+                .name("igorJson")
+                .build();
+    }
 }
